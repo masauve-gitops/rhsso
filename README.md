@@ -28,14 +28,4 @@ This will create the Red Hat SSO instance, an "openshift" realm, client, and ini
 
 This will take a few mintues for Red Hat SSO to install, then it may still take a few minutes longer after that for the authentication pods to cycle for RH-SSO to become available as the login service.
 
-## Argo CD or Script
-
-
-The script will setup a user in Red Hat SSO with OpenShift cluster-admin privileges. The user by default is ocpadmin/password. We encourage you to update the password in openshift-user.yaml before proceeding
-
-without ARGOCD:
-
-./setup.sh
-
-oc apply -k rhsso/overlays/MYDOMAIN
 
